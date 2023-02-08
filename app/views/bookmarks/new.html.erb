@@ -1,2 +1,8 @@
-<h1>Bookmarks#new</h1>
-<p>Find me in app/views/bookmarks/new.html.erb</p>
+<div class="container mt-5">
+  <h1>New bookmark</h1>
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.input :comment %>
+    <%= f.association :movie %>
+    <%= f.button :submit %>
+  <% end %>
+</div>
