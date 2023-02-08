@@ -45,6 +45,10 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 gem "sassc-rails"
 
+# gem install rest-client
+
+gem "rest-client"
+
 gem "autoprefixer-rails"
 
 gem "font-awesome-sass", "~> 6.1"
