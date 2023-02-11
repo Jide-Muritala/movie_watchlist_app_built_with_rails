@@ -2,3 +2,11 @@
   <h1>Details</h1>
   <h2><%= @list.name %></h2>
 </div>
+<div>
+  <p>Reviews</p>
+  <ul class="list-group">
+    <% @list.bookmarks.each do |review| %>
+      <li class="list-group-item"><% bookmark.comment %></li>
+    <% end %>
+  </ul>
+</div>

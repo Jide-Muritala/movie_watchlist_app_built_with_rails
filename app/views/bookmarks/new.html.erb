@@ -3,6 +3,6 @@
   <%= simple_form_for [@list, @bookmark] do |f| %>
     <%= f.input :comment %>
     <%= f.association :movie %>
-    <%= f.button :submit %>
+    <%= f.submit "Submit", class: "btn btn-primar" %>
   <% end %>
 </div>
